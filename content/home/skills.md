@@ -17,19 +17,31 @@ subtitle = ""
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  name = "Coding"
+  description = ""
   
 [[feature]]
-  icon = "chart-line"
+  icon = "dna"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "Molecular Biology"
+  description = ""  
+  
+[[feature]]
+  icon = "Water"
+  icon_pack = "fas"
+  name = "Marine Biology"
+  description = ""
   
 [[feature]]
   icon = "camera-retro"
   icon_pack = "fas"
   name = "Photography"
-  description = "10%"
+  description = ""
+  
+[[feature]]
+  icon = "kiwi-bird"
+  icon_pack = "fas"
+  name = "Tidy-kiwi"
+  description = ""
 
 +++
