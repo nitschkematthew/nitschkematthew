@@ -38,7 +38,7 @@ user_groups = ["Researchers", "Visitors"]
 # List qualifications (such as academic degrees)
 [[education.courses]]
   course = "PhD"
-  institution = "University of Queensland"
+  institution = "The University of Queensland"
   year = 2015
 
 [[education.courses]]
