@@ -1,75 +1,85 @@
----
++++
 # Display name
-name: Nelson Bighetti
+name = "Matthew R. Nitschke"
 
 # Username (this should match the folder name)
-authors:
-- admin
+authors = ["admin"]
 
 # Is this the primary user of the site?
-superuser: true
+superuser = true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role = "Rutherford Foundation Post-Doctoral Fellow"
 
 # Organizations/Affiliations
-organizations:
-- name: Stanford University
-  url: ""
+#   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
+organizations = [ { name = "Victoria University of Wellington", url = "https://www.victoria.ac.nz" },{ name = "C3, University of Technology Sydney", url = "https://www.uts.edu.au/research-and-teaching/our-research/climate-change-cluster" } ]
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio = "Coral Reefs, Symbiosis, Microbial Ecology, R-stats."
 
-interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+# Enter email to display Gravatar (if Gravatar enabled in Config)
+email = "matthew.nitschke@uts.edu.au"
 
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+# List (academic) interests or hobbies
+interests = [
+  "Molecular Ecology",
+  "Photophysiology",
+  "Optical modeling"
+]
+
+# Organizational groups that you belong to (for People widget)
+#   Set this to `[]` or comment out if you are not using People widget.
+user_groups = ["Researchers", "Visitors"]
+
+# List qualifications (such as academic degrees)
+[[education.courses]]
+  course = "PhD"
+  institution = "University of Queensland"
+  year = 2015
+
+[[education.courses]]
+  course = "Master of Marine Conservation"
+  institution = "Victoria University of Wellington"
+  year = 2010
+
+[[education.courses]]
+  course = "BSc, Major in Marine Biology"
+  institution = "Victoria University of Wellington"
+  year = 2008
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+
+[[social]]
+  icon = "envelope"
+  icon_pack = "fas"
+  link = "mailto:matthew.nitschke@uts.edu.au"  # For a direct email link, use "mailto:test@example.org".
+
+[[social]]
+  icon = "twitter"
+  icon_pack = "fab"
+  link = "https://twitter.com/MattRNitschke"
+
+[[social]]
+  icon = "google-scholar"
+  icon_pack = "ai"
+  link = "https://scholar.google.com.au/citations?user=LI1-2wUAAAAJ"
+
+[[social]]
+  icon = "github"
+  icon_pack = "fab"
+  link = "https://github.com/nitschkematthew"
+
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# [[social]]
+#   icon = "cv"
+#   icon_pack = "ai"
+#   link = "files/cv.pdf"
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
-  
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.  
-user_groups:
-- Researchers
-- Visitors
----
++++
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+At present I am a [Rutherford Foundation Post-Doctoral Fellow]({{< ref "/publication/_index.md" >}}), awarded by the Royal Society of New Zealand (2019-2021), and am based at the School of Biological Sciences, Victoria University of Wellington, New Zealand. I am also a member of the Future Reefs team within the Climate Change Cluster (C3), at the University of Technology Sydney, Australia. My research interests relate to all things coral reefs, from broad-scale ecology through to the functioning of single cells. I specialise in the phylogenetic diversity and functioning of coral symbionts, most notably of the dinoflagellate family Symbiodiniaceae. In my research I leverage next-generation sequencing, bioinformatics, bio-optical probes and models, and photogrammetry.
