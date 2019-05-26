@@ -23,7 +23,10 @@ email = "matthew.nitschke@uts.edu.au"
 
 # List (academic) interests or hobbies
 interests = [
-  "Molecular Ecology",
+  "Coral reefs",
+  "Symbiosis",
+  "Molecular ecology",
+  "Bioinformatics",
   "Photophysiology",
   "Optical modeling"
 ]
@@ -56,7 +59,7 @@ user_groups = ["Researchers", "Visitors"]
 [[social]]
   icon = "envelope"
   icon_pack = "fas"
-  link = "mailto:matthew.nitschke@uts.edu.au"  # For a direct email link, use "mailto:test@example.org".
+  link = "mailto:matt.nitschke@vuw.ac.nz"  # For a direct email link, use "mailto:test@example.org".
 
 [[social]]
   icon = "twitter"
@@ -82,4 +85,4 @@ user_groups = ["Researchers", "Visitors"]
 
 +++
 
-At present I am a [Rutherford Foundation Post-Doctoral Fellow]({{< ref "/publication/_index.md" >}}), awarded by the Royal Society of New Zealand (2019-2021), and am based at the School of Biological Sciences, Victoria University of Wellington, New Zealand. I am also a member of the Future Reefs team within the Climate Change Cluster (C3), at the University of Technology Sydney, Australia. My research interests relate to all things coral reefs, from broad-scale ecology through to the functioning of single cells. I specialise in the phylogenetic diversity and functioning of coral symbionts, most notably of the dinoflagellate family Symbiodiniaceae. In my research I leverage next-generation sequencing, bioinformatics, bio-optical probes and models, and photogrammetry.
+At present I am a [Rutherford Foundation Post-Doctoral Fellow]({{< ref "https://royalsociety.org.nz/what-we-do/funds-and-opportunities/rutherford-foundation/rutherford-foundation-recipients/matthew-nitschke/" >}}), awarded by the Royal Society of New Zealand (2019-2021), and am based at the School of Biological Sciences, Victoria University of Wellington, New Zealand. I am also a member of the Future Reefs team within the Climate Change Cluster (C3), at the University of Technology Sydney, Australia. My research interests relate to all things coral reefs, from broad-scale ecology through to the functioning of single cells. I specialise in the phylogenetic diversity and functioning of coral symbionts, most notably of the dinoflagellate family Symbiodiniaceae. In my research I leverage next-generation sequencing, bioinformatics, bio-optical probes and models, and photogrammetry.
