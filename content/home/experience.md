@@ -17,6 +17,7 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
 [[experience]]
   title = "Post-doctoral Researcher"
   company = "CESAM, University of Aveiro"
@@ -30,6 +31,21 @@ date_format = "Jan 2006"
   * DNA metabarcoding
   * Bioinformatics
   * Photobiology
+  """
+  
+[[experience]]
+  title = "Teaching"
+  company = "Victoria University of Wellington"
+  company_url = "http://www.vuw.ac.nz"
+  location = "Wellington, New Zealand"
+  date_start = "2016-05-01"
+  date_end = "2019-07-30"
+  description = """
+  Responsibilities include:
+  
+  * Field course
+  * Lecturing
+  * Demonstrating
   """
 
 +++
