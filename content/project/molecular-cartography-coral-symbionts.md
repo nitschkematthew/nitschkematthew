@@ -1,13 +1,15 @@
 ---
 title: "Molecular Cartography Coral Symbionts"
 date: 2019-05-27T16:11:57+12:00
-draft: true
+draft: false
 ---
 
-# This is a test
++++
+# Project title
+title = "Molecular cartography of coral-symbiotic algae in 3D"
 
-## Test subheading
+# Project sumary to display on homepage.
+summary = "A 3D-modelling approach to characterising the optical niche of Symbiodiniaceae symbionts"
 
-```
-Test code cunk here
-```
++++
+Project text here
