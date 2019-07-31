@@ -30,11 +30,11 @@ Next lets set a seed so that we can recreate the same image again and again.
 set.seed(1234)
 ```
 
-Our starting image was retrieved from the [Sentinel-hub EO browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.5287&lng=151.8901&zoom=10&time=2019-07-29&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C), using the L2A product, true colour bands (4, 3, and 2).
+Our starting image was retrieved from the [Sentinel-hub EO browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.5287&lng=151.8901&zoom=10&time=2019-07-29&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C), using the L2A product, true colour bands (4, 3, and 2). Use the search function to find a day that is free of cloud. Here we are looking at Wistari reef on the left, and Heron reef on the right.
 
 {{% figure src="/img/2019-01-20, Sentinel-2B L1C, True color.png" %}}
 
-I then flattened the bands into a single channel grayscale image and boosted the contrast in a photo editor. This will create larger ridges then an image with a flatter profile. You can do this for in many different photo editors (photoshop, lightroom, gimp), and even free web tools: I like [Photopea](https://www.photopea.com/).
+I then flattened the bands into a single channel grayscale image and boosted the contrast in a photo editor. This will create larger ridges then an image with a flatter profile. You can do this for in many different photo editors (photoshop, lightroom, gimp), and even free web tools, for example, [Photopea](https://www.photopea.com/).
 
 {{% figure src="/img/2019-01-20, Sentinel-2B L1C, True color_bw.png" %}}
 
