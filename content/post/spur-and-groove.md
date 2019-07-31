@@ -6,7 +6,7 @@ draft: false
 
 ## Using R, ggplot2 and ggridges to render reefs
 
-I recently came across an artistic use for the geom_ridgeline() function by Garrick Aden-Buie, where he created a neat twitter banner using R, ggplot2, and ggridges. Click [here](https://www.garrickadenbuie.com/blog/my-ggridges-twitter-header/) to check it out!
+I recently came across an artistic use for the `geom_ridgeline()` function by Garrick Aden-Buie, where he created a neat twitter banner using `R`, `ggplot2`, and `ggridges`. Click [here](https://www.garrickadenbuie.com/blog/my-ggridges-twitter-header/) to check it out!
 
 I thought it would be cool to adapt the code and try something similar on a satellite view of some of my favourite reefs. Lets see if we can achieve a similar effect, and recreate some of the spur and groove that Heron and Wistari reefs are so well known for, but in geoms and ridgelines.
 
@@ -38,13 +38,13 @@ I then flattened the bands into a single channel grayscale image and boosted the
 
 {{% figure src="/img/2019-01-20, Sentinel-2B L1C, True color_bw.png" %}}
 
-We then read the image file into R
+We then read the image file into R.
 
 ```
 heron_wistari <- readPNG("2019-01-20, Sentinel-2B L1C, True color.png") # Tip: Image needs a lot of contrast
 ```
 
-The next step is to convert the image into long format. Here we use the reshape2 function melt(). At the same time, we use dplyrs mutate() function to add some noise to the pixel values so that the ridgelines, even in areas of the image that had little colour variation (e.g. in the deep water), have some character.
+The next step is to convert the image into long format. Here we use the reshape2 function `melt()`. At the same time, we use dplyrs `mutate()` function to add some noise to the pixel values so that the ridgelines, even in areas of the image that had little colour variation (e.g. in the deep water), have some character.
 
 ```
 hw_df <- heron_wistari %>% 
@@ -54,9 +54,9 @@ hw_df <- heron_wistari %>%
   )
 ```
 
-Next we do some filtering, again using dplyr. Without this step we would have a ridgeline for every row (equal to the image height) of pixels in the original image. hw_df$rows is the column that contains the row coordinates, so we filter the rows in sequence from 0 to 421, which is the image height, and keep only 1 row in 8. You can play around with this step until you get the look you are after.
+Next we do some filtering, again using dplyr. Without this step we would have a ridgeline for every row (equal to the image height) of pixels in the original image. `hw_df$rows` is the column vector that contains the row coordinates, so we filter the rows in sequence from 0 to 421, which is the image height, and keep only 1 row in 8. You can play around with this step until you get the look you are after.
 
-Here we also traverse the rows by grouping by rows, splitting the dataframe to contain individual rows, and use zoo rollmean() to smooth out the pixel colour data.
+Here we also traverse the rows by grouping by rows, splitting the dataframe to contain individual rows, and use zoo `rollmean()` to smooth out the pixel colour data.
 
 ```
 hw_df <- hw_df %>%
@@ -68,7 +68,7 @@ hw_df <- hw_df %>%
   })
 ```
 
-All that is left is to call ggplot2, pipe in the data (note that the cols have to be sent in reverse order to how we have them in the dataframe), and map pixels to the geom_ridgeline() height parameter.
+All that is left is to call ggplot2, pipe in the data (note that the cols have to be sent in reverse order to how we have them in the dataframe), and map pixels to the `geom_ridgeline()` height parameter.
 
 Most of the code below is just fiddling around until you find the aesthetic you want.
 
@@ -96,3 +96,7 @@ hw_df %>%
 ```
 
 {{% figure src="/img/heron_wistari_ridge.png" %}}
+
+I then export this to a vector format such as .pdf, and then put the final touches you see at the top of the page in a drawing software such as inkscape or illustrator.
+
+Thats it!
