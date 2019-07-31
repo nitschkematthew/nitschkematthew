@@ -10,6 +10,8 @@ I recently came across an artistic use for the geom_ridgeline() function by Garr
 
 I thought it would be cool to adapt the code and try something similar on a satellite view of some of my favourite reefs. Lets see if we can achieve a similar effect, and recreate some of the spur and groove that Heron and Wistari reefs are so well known for, but in geoms and ridgelines.
 
+![Example image](/static/img/heron_wistari_ridge_AI.png)
+
 <img src="{{<baseurl>}}/img/heron_wistari_ridge_AI.png">
 
 {{< figure src="static/img/heron_wistari_ridge_AI.png">}}
