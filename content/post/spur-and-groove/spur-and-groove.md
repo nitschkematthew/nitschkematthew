@@ -10,16 +10,7 @@ I recently came across an artistic use for the geom_ridgeline() function by Garr
 
 I thought it would be cool to adapt the code and try something similar on a satellite view of some of my favourite reefs. Lets see if we can achieve a similar effect, and recreate some of the spur and groove that Heron and Wistari reefs are so well known for, but in geoms and ridgelines.
 
-{{< figure src="/images/heron_wistari_ridge_AI.png" >}}
-
-{{% figure src="/images/heron_wistari_ridge_AI.png" %}}
-
 {{% figure src="/img/heron_wistari_ridge_AI.png" %}}
-
-{{% figure src="static/img/heron_wistari_ridge_AI.png" %}}
-
-{{% figure src="/static/img/heron_wistari_ridge_AI.png" %}}
-
 
 First lets load in our R libraries
 
@@ -41,11 +32,11 @@ set.seed(1234)
 
 Our starting image was retrieved from the [Sentinel-hub EO browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.5287&lng=151.8901&zoom=10&time=2019-07-29&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C), using the L2A product, true colour bands (4, 3, and 2).
 
-{{< figure src="/static/img/2019-01-20, Sentinel-2B L1C, True color.png" title="Heron_Wistari_sentinel" >}}
+{{% figure src="/img/2019-01-20, Sentinel-2B L1C, True color.png" %}}
 
 I then flattened the bands into a single channel grayscale image and boosted the contrast in a photo editor. This will create larger ridges then an image with a flatter profile. You can do this for in many different photo editors (photoshop, lightroom, gimp), and even free web tools: I like [Photopea](https://www.photopea.com/).
 
-{{< figure src="/static/img/2019-01-20, Sentinel-2B L1C, True color_bw.png" title="Heron_Wistari_sentinel_bw" >}}
+{{% figure src="/img/2019-01-20, Sentinel-2B L1C, True color_bw.png" %}}
 
 We then read the image file into R
 
@@ -104,5 +95,4 @@ hw_df %>%
     plot.background = element_rect(fill = theme_color, color = NA))
 ```
 
-{{< figure src="/static/img/heron_wistari_ridge.png" title="Heron_Wistari_ggridges_draft" >}}
-
+{{% figure src="/img/heron_wistari_ridge.png" %}}
