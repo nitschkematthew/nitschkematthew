@@ -30,7 +30,7 @@ Next lets set a seed so that we can recreate the same image again and again.
 set.seed(1234)
 ```
 
-Our starting image was retrieved from the [Sentinel-hub EO browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.5287&lng=151.8901&zoom=10&time=2019-07-29&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C), using the L2A product, true colour bands (4, 3, and 2). Use the search function to find a day that is free of cloud. Here we are looking at Wistari reef on the left, and Heron reef on the right.
+Our starting image was retrieved from the [Sentinel-hub EO browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.5287&lng=151.8901&zoom=10&time=2019-07-29&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C), using the L1C product, true colour bands (4, 3, and 2). Use the search function to find a day that is free of cloud. Here we are looking at Wistari reef on the left, and Heron reef on the right.
 
 {{% figure src="/img/2019-01-20, Sentinel-2B L1C, True color.png" %}}
 
@@ -41,7 +41,7 @@ I then flattened the bands into a single channel grayscale image and boosted the
 We then read the image file into R.
 
 ```
-heron_wistari <- readPNG("2019-01-20, Sentinel-2B L1C, True color.png") # Tip: Image needs a lot of contrast
+heron_wistari <- readPNG("2019-01-20, Sentinel-2B L1C, True color_bw.png") # Tip: Image needs a lot of contrast
 ```
 
 The next step is to convert the image into long format. Here we use the reshape2 function `melt()`. At the same time, we use dplyrs `mutate()` function to add some noise to the pixel values so that the ridgelines, even in areas of the image that had little colour variation (e.g. in the deep water), have some character.
