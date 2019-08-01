@@ -68,7 +68,7 @@ hw_df <- hw_df %>%
   })
 ```
 
-All that is left is to call ggplot2, pipe in the data (note that the cols have to be sent in reverse order to how we have them in the dataframe), and map pixels to the `geom_ridgeline()` height parameter.
+All that is left is to call ggplot2, pipe in the data (note that the rows have to be sent in reverse order to how we have them in the dataframe), and map pixels to the `geom_ridgeline()` height parameter.
 
 Most of the code below is just fiddling around until you find the aesthetic you want.
 
